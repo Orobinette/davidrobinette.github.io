@@ -1,0 +1,118 @@
+*{
+    --primary-light: #20416d;
+    --primary-dark: #1d3557;
+    --surface-light: #ffffff;
+    --surface-med: #f0f0f0;
+    --border: #d3d3d3;
+    --txt-dark: #000000;
+
+    font-family: "Courier New", Courier, monospace;
+
+    line-height: 150%;
+    
+    box-sizing: border-box;
+    margin:0px;
+
+    transition: .1s ease-in;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    background-color: var(--surface-light);
+}
+button{
+    background-color: var(--primary-light);
+    box-shadow: 2px 2px 0px black;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    height: 40px;
+    font-size: 1.1em;
+}
+
+.interactable:hover{
+    transform: translateY(3px);
+}
+
+.navbar{
+    background-color: white;
+    box-shadow: 5px 0px 5px black;
+    border-radius: 0px;
+
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+    top: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    font-size: 1.25em;
+}
+.navbar a{
+    background-color: var(--primary-light);
+    color: white;
+    box-shadow: 2px 2px 0px black;
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+.bounding-box{
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+}
+.contact-panel{
+    background-color: var(--primary-light);
+    color: white;
+    
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 70px;
+    padding: 30px 0px;
+    text-align: center;
+}
+.contact-text{
+    width: 40%;
+    justify-content: center;
+}
+.contact-text p{
+    text-align: justify;
+}
+.contact-input{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact-input input{
+    height: 30px;
+}
+#message{
+    height: 100px;
+}
+.contact-input button{
+    background-color: var(--primary-dark);
+}
